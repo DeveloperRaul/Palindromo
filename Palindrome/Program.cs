@@ -15,6 +15,7 @@ namespace Palindrome
             palabras.Add("YYEEDT");
             palabras.Add("RAUL");
             palabras.Add("AaZzYMMi");
+            palabras.Add("AaaaZzzzP");
 
             var sonPalindromos = EsPalidromo(palabras);
 
@@ -47,7 +48,7 @@ namespace Palindrome
             {
                 string frase = palabras[i].Replace(" ", String.Empty);
                 Console.WriteLine(frase);
-                sonPalindromos.Add(verify(frase));
+                sonPalindromos.Add(verify(frase.ToLower()));
             }
 
             return sonPalindromos;
